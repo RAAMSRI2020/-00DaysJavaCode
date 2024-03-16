@@ -1,17 +1,22 @@
 package com.javaBasics;
-
 import java.util.Scanner;
+import java.lang.Integer;
 
 public class infinteSum {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n,sum=0;
-        String str="x";
-        do{
-            System.out.println("Enter any number:");
-            n=sc.nextInt();
-            sum+=n;
-        }while(n!=0);
-        System.out.println(sum);
+        int sum=0;String str;
+        while(true){
+            System.out.println("Enter any number(enter x to quit):");
+            str=sc.next();
+            try{
+                int n=Integer.parseInt(str);
+                sum+=n;
+            }catch(NumberFormatException e){
+                break;
+            }
+
+        }
+        System.out.println("sum:"+sum);
     }
 }

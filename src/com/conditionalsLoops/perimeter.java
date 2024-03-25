@@ -56,6 +56,6 @@ public class perimeter {
             }
             System.out.println("Do you want to continue(Y/N)");
             s=sc.next();
-        }while("Y" == s);
+        }while("Y" != s);
     }
 }

@@ -2,7 +2,7 @@ package com.conditionalsLoops;
 
 class depreciation {
     public static void main(String[] args) {
-        long amount = 100000;
+        long amount = 100;
         long deppercent = 10;
         long year = 3;
         long temp = amount;
